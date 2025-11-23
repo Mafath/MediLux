@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+  
+     <!-- User System -->
+     
+     <servlet>
+     	<servlet-name>UserInsertServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>UserPackage.UserInsertServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UserInsertServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UserInsertServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>UserLoginServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>UserPackage.UserLoginServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UserLoginServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UserLoginServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+      <servlet>
+     	<servlet-name>UserProfileServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>UserPackage.UserProfileServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UserProfileServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UserProfileServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>UpdateProfileServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>UserPackage.UpdateProfileServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UpdateProfileServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UpdateProfileServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+
+
+
+
+
+
+	<servlet>
+     	<servlet-name>UploadProfileImageServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.UploadProfileImageServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UploadProfileImageServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UploadProfileImageServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+
+
+
+
+	<servlet>
+     	<servlet-name>UpdateAdminProfileServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>UserPackage.UpdateAdminProfileServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UpdateAdminProfileServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UpdateAdminProfileServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+
+
+
+
+
+
+	<servlet>
+     	<servlet-name>UploadAdminProfileImageServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.UploadAdminProfileImageServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UploadAdminProfileImageServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UploadAdminProfileImageServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+
+
+
+
+
+
+<!-- User awilla submit krnwa. Ethkota servlet file ekt gya. Servlet file eken krnne ape controller ek cll krnwa. EEtapasse a adala dewl tika
+unhama api aye return wenwa ape display wena part ekta -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet>
+     	<servlet-name>AddProductServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>BookshopPackage.AddProductServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>AddProductServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/AddProductServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>GetAllProductServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.GetAllProductServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>GetAllProductServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/GetAllProductServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>UpdateProductServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>BookshopPackage.UpdateProductServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>UpdateProductServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/UpdateProductServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>DeleteProductServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>BookshopPackage.DeleteProductServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>DeleteProductServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/DeleteProductServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>AddToCartServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.AddToCartServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>AddToCartServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/AddToCartServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     <servlet>
+     	<servlet-name>GetUserProfileServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.GetUserProfileServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>GetUserProfileServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/GetUserProfileServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+     <servlet>
+     	<servlet-name>GetAdminProfileServlet</servlet-name>       <!-- call the servlet here / api hdpu servlet eke nama-->
+     	<servlet-class>com.medilux.servlet.GetAdminProfileServlet</servlet-class>  <!-- servlet eke path eka -->
+     </servlet>
+     
+     <servlet-mapping>         <!-- Adala servlet ek setup krnna -->
+     	<servlet-name>GetAdminProfileServlet</servlet-name>      <!-- Methnath servlet eke namama denna -->
+     	<url-pattern>/GetAdminProfileServlet</url-pattern>    <!-- Insert servlet eke tyenne meka / mekama thama form eke action ektath denne-->
+     </servlet-mapping>
+     
+     
+     
+     
+</web-app>

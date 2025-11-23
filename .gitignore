@@ -1,0 +1,64 @@
+# Generic
+*.log
+*.tmp
+*.bak
+
+# Java compiled class files
+*.class
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# Build directories
+/build/
+/target/
+/bin/
+
+# Eclipse
+/.settings/
+.classpath
+.project
+
+# IntelliJ
+/.idea/
+*.iml
+
+# NetBeans
+/nbproject/
+
+# VS Code
+/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tomcat / servlet container temporary files
+/logs/
+/temp/
+/work/
+
+
+# Database and environment files
+# Ignore full DB dumps placed in `/db/`, but keep schema and sample seeds tracked
+/db/*.sql
+!/db/schema.sql
+!/db/seed.sample.sql
+*.env
+*.properties
+application.properties
+
+# Node (if any)
+/node_modules/
+
+# Ignore local IDE run files
+hs_err_pid*
+
+# Editor swap files
+*~
+*.swp
+
+# Ignore Windows desktop.ini files
+desktop.ini
